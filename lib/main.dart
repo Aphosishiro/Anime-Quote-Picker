@@ -1,4 +1,3 @@
-// import 'package:flutter/cupertino.dart';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -22,16 +21,19 @@ class _QuotePickerState extends State<QuotePicker> {
       changequote = Random().nextInt(3) + 1;
     });
   }
+
   void button2() {
     setState(() {
       changequote = Random().nextInt(3) + 4;
     });
   }
+
   void button3() {
     setState(() {
       changequote = Random().nextInt(3) + 7;
     });
   }
+
   void button4() {
     setState(() {
       changequote = Random().nextInt(3) + 10;
@@ -78,6 +80,18 @@ class _QuotePickerState extends State<QuotePicker> {
                     height: 40,
                     width: 100,
                     child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.transparent,
+                          side: const BorderSide(
+                            color: Colors.white,
+                            width: 1,
+                          ),
+                          shape: const RoundedRectangleBorder(
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(10),
+                              bottomRight: Radius.circular(10),
+                            ),
+                          )),
                       onPressed: () {
                         button1();
                       },
@@ -93,6 +107,18 @@ class _QuotePickerState extends State<QuotePicker> {
                     height: 40,
                     width: 100,
                     child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.transparent,
+                          side: const BorderSide(
+                            color: Colors.white,
+                            width: 1,
+                          ),
+                          shape: const RoundedRectangleBorder(
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(10),
+                              bottomRight: Radius.circular(10),
+                            ),
+                          )),
                       onPressed: () {
                         button2();
                       },
@@ -108,6 +134,18 @@ class _QuotePickerState extends State<QuotePicker> {
                     height: 40,
                     width: 100,
                     child: ElevatedButton(
+                     style: ElevatedButton.styleFrom(
+                          primary: Colors.transparent,
+                          side: const BorderSide(
+                            color: Colors.white,
+                            width: 1,
+                          ),
+                          shape: const RoundedRectangleBorder(
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(10),
+                              bottomRight: Radius.circular(10),
+                            ),
+                          )),
                       onPressed: () {
                         button3();
                       },
@@ -123,6 +161,18 @@ class _QuotePickerState extends State<QuotePicker> {
                     height: 40,
                     width: 100,
                     child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.transparent,
+                          side: const BorderSide(
+                            color: Colors.white,
+                            width: 1,
+                          ),
+                          shape: const RoundedRectangleBorder(
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(10),
+                              bottomRight: Radius.circular(10),
+                            ),
+                          )),
                       onPressed: () {
                         button4();
                       },
